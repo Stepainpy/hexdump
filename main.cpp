@@ -28,8 +28,8 @@ using params_t = std::initializer_list<const char* const>;
 ======================================== */
 
 constexpr size_t page_row_count = 32;
-// U+00B7 middle dot, 0xfa для CP866
-constexpr char dot_char = '\xfa';
+// Если установлена CP866 можно использовать 0xfa a.k.a. U+00B7 middle dot
+constexpr char dot_char = '.';
 
 namespace ansi_color {
     constexpr auto red  = "31"sv;
